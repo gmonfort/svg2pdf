@@ -1,6 +1,31 @@
 = svg2pdf
 
-Description goes here.
+Convert SVG files to other formats, pdf, ps, png, jpeg, etc.
+
+This is a simple gem that wraps RSVG and Cairo gems
+
+== Features
+
+* Convert from svg file
+* Convert from svg string in memory
+* Available output formats:
+    * pdf
+    * ps
+    * png
+    * jpeg
+
+== Examples
+
+    pdf_file = Svg2pdf.convert_from_file("my_file.svg", :pdf)
+
+== Requirements
+
+* RSVG2 gem
+* active_support/secure_random
+
+== Install
+
+gem install svg2pdf
 
 == Contributing to svg2pdf
  
